@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ProyectoFinal/index.css">
+    <script src="../ProyectoFinal/index.js"></script>
+    <title>Administrador</title>
+</head>
+<body>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDnp_bpSS811R8VI0Higeop-j2J9yLaI5I",
+          authDomain: "proyectofinal-6713c.firebaseapp.com",
+          databaseURL: "https://proyectofinal-6713c-default-rtdb.firebaseio.com",
+          projectId: "proyectofinal-6713c",
+          storageBucket: "proyectofinal-6713c.appspot.com",
+          messagingSenderId: "980387281066",
+          appId: "1:980387281066:web:7020e2667cb6cdf6dbb8d3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+    <header>Administrador</header>
+
+    <section id="admin">
+        <label for="">ID</label>
+        <input type="text" name="ID" id="ID">
+
+        <label for="">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="">Descripcion</label>
+        <input type="text" id="talla" placeholder="talla">
+
+        <label for="">Precio: </label>
+        <input type="text" name="precio" id="precio">
+
+        <label for="">Estado</label>
+        <select name="estado" id="estado">
+            <optios value="0">Disponible</optios>
+            <optios value="1">No disponible</optios>
+        </select>
+
+        <br>
+
+        <label for="">Nombre de la imagen</label>
+        <input type="text" name="imgName" id="imgName" size="20">
+
+        <label for="">URL</label>
+        <input type="text" name="URL" id="URL" size="20">
+        <br>
+    </section>
+    <br>
+    <center>
+        <label for="">Seleccionar imagen jpg, jpeg, png</label>
+        <input type="file" name="archivo" id="archivo" accept=".jpg, .png, .jpeg">
+        <img id="imagen" src="" alt="producto">
+        <button id="verImagen" name="verImagen">Clic para mostrar del producto</button>
+    </center>
+    <hr>
+
+    <center>
+        <h2>Productos</h2>
+    </center>
+    <section id="preductos">
+        <div id="stock">
+            <center>
+
+            </center>
+        </div>
+    </section>
+
+    <div id="botones">
+        <center>
+            <button id="btnAñadir">Añadir</button>
+            <button id="btnActualizar">Actualizar</button>
+            <button id="btnConsultar">Consultar</button>
+            <button id="btnDeshabilitar">Deshabilitar</button>
+        </center>
+    </div>
+
+    <footer>
+        <h3>Derechos reservados | Brian Eduardo Rios Muñoz</h3>
+    </footer>
+</body>
+</html>

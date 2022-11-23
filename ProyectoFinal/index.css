@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px;
+    height: 15%;
+    text-align: center;
+    background: url();
+    font-size: 120%;
+}
+
+nav {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: larger;
+    text-align: center;
+    width: 25%;
+}
+
+nav a:hover {
+    background-color: aqua;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    padding: 20px;
+    text-align: justify;
+}
+
+section img {
+    width: 50%;
+    align-content: center;
+}
+
+section div {
+    padding: 5px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+form label {
+    font-size: 200% auto;
+    font-weight: bold;
+}
+
+form textarea {
+    font-size: large;
+}
+
+form input {
+    font-size: large;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+}
+
+#productos {
+    flex-wrap: wrap;
+}
+
+#admin {
+    background-color: aquamarine;
+    color: black;
+    flex-wrap: wrap;
+}
+
+#admin input, select {
+    height: 30px;
+}
+
+#botones button {
+    background-color: aquamarine;
+    font-size: large;
+    font-weight: bold;
+}
+
+#botones button:hover {
+    background-color: aquamarine;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    nav, .row, section {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+}
+
+.texto2{
+    padding-right: 10%;
+}
+
+#bton1 {
+    background-color: aquamarine;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#bton1:hover {
+    background-color: aquamarine;
+    color: white;
+}
+
+.productos {
+    width: 300px;
+    height: 500px;
+    border: 2px solid aquamarine;
+    padding: 10px;
+    margin: 20px;
+}
+
+.productos img {
+    width: 190px;
+    display: flex;
+    margin-left: 45px;
+}
+
+.productos h9 {
+    font-size: 25px;
+}
+
+.productos p {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.productos button {
+    font-size: larger;
+    font-weight: bold;
+    background-color: aqua;
+    color: black;
+}
+
+#botones {
+    height: 10%;
+    background-color: white;
+}

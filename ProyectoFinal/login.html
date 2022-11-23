@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/SitioWeb/ProyectoFinal/estilos.css">
+    <script src="/SitioWeb/ProyectoFinal/login.js"></script>
+    <title>Login</title>
+</head>
+<body id="loginbody">
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBZrK-2-ZJp2toMzvbauaDiQumXkFyLG3I",
+          authDomain: "splashstore-9ebeb.firebaseapp.com",
+          projectId: "splashstore-9ebeb",
+          storageBucket: "splashstore-9ebeb.appspot.com",
+          messagingSenderId: "304873314598",
+          appId: "1:304873314598:web:32f84798eb48dd341249e7"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+    <section id="login">
+        <h3>Ingreso al administrador</h3>
+        <hr>
+        <div>
+            <br>
+            <br>
+            <label for="">Usuario</label>
+            <input type="text" name="Usuario" id="Usuario">
+            <br>
+            <br>
+            <label for="">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña">
+            <br>
+            <br>
+            <button id="btnLogin">Iniciar sesión</button>
+            <button id="btnLimpiar">Limpiar</button>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+</body>
+</html>

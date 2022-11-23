@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
     <title>Contactos</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Contactanos</h1>
+    </header>
+
+    <nav>
+        <a href="../HTML/Home.html">Home</a>
+        <a href="../HTML/nosotros.html">Empresa</a>
+        <a href="../HTML/Contactos.html">Contactos</a>
+        <a href="../HTML/Productos.html">Productos</a>
+    </nav>
+
+    <div class="row">
+        <section>
+            <div class="caja">
+                <form action="brianeduardorios@gmail.com" method="get">
+                    <h4>Ponte en contacto con nosotros</h4>
+                    <hr>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required="true" placeholder="captura tu nombre">
+                    <br>
+                    <br>
+                    <label for="Correo">Correo</label>
+                    <input type="email" name="correo" id="correo" required="true" placeholder="captura tu correo" pattern>
+                    <br>
+                    <br>
+                    <h6>Comentarios</h6>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10">Escribe aquí...</textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar informacion">
+                    <br>
+                    <input type="reset" value="limpiar">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>Todos los derechos reservados | Brian Rios</footer>
 </body>
 </html>
